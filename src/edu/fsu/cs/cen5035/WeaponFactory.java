@@ -16,6 +16,8 @@ public class WeaponFactory {
             	return new SimpleHammer();
             case "crs":
             	return new CrazyRandomSword();
+            case "banHammer":
+            	return new BanHammer();
             default:
                 throw new IllegalArgumentException("Invalid type");
         }
