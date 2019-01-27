@@ -1,0 +1,114 @@
+Eric Mustapick
+enm13c
+
+E.a.
+
+Eric@DESKTOP-FNE21F3 MINGW64 ~
+$ cd Assignment1/
+
+Eric@DESKTOP-FNE21F3 MINGW64 ~/Assignment1 (master)
+$ ls
+docs/  README.md  src/
+
+Eric@DESKTOP-FNE21F3 MINGW64 ~/Assignment1 (master)
+$ git commit -m"Updated Information Files"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Eric@DESKTOP-FNE21F3.(none)')
+
+Eric@DESKTOP-FNE21F3 MINGW64 ~/Assignment1 (master)
+$ git config --global user.email "ericfsu40@yahoo.com"
+
+Eric@DESKTOP-FNE21F3 MINGW64 ~/Assignment1 (master)
+$ git config --global user.name "Eric Mustapick"
+
+Eric@DESKTOP-FNE21F3 MINGW64 ~/Assignment1 (master)
+$ git commit -m"Updated Information Files"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+        modified:   README.md
+
+no changes added to commit
+
+Eric@DESKTOP-FNE21F3 MINGW64 ~/Assignment1 (master)
+$ git add README.md
+
+Eric@DESKTOP-FNE21F3 MINGW64 ~/Assignment1 (master)
+$ git commit -m"Updated Information Files"
+[master 7c935f0] Updated Information Files
+ 1 file changed, 2 insertions(+)
+
+Eric@DESKTOP-FNE21F3 MINGW64 ~/Assignment1 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Eric@DESKTOP-FNE21F3 MINGW64 ~/Assignment1 (master)
+$ ^C
+
+Eric@DESKTOP-FNE21F3 MINGW64 ~/Assignment1 (master)
+$ git add docs/status.txt
+
+Eric@DESKTOP-FNE21F3 MINGW64 ~/Assignment1 (master)
+$ git commit -m="Added git status message to status"
+[master 550c375] =Added git status message to status
+ 1 file changed, 6 insertions(+)
+
+Eric@
+
+
+E.b. 10. git rev-list --all --count.
+
+E.c. Thu Sep 15 10:29:34 2016 -0400
+ git log -p .gitignore
+
+E.d. Branches are used to allow work on new features without editing the master
+branch so other features can also use the master branch as a start point.
+Branches are also used to keep changes isolated and neat, incase code on one feature would interfere
+with code on another feature.
+
+E.e. git staus gives you the status of your current branch while git log has information about the
+remote repository and everyone's commits/pushes.
+
+E.f. git log --follow -- src/edu/fsu/cs/cen5035/Weapon.java
+
+E.g. git log --grep="file"
+
+E.h.
+Inheritance is how we let a subclass inherit the methods and variables of a superclass.
+Polymorphisim is the ability for one class or object to be mulitple things. for example the
+spear in this game is a spear and a weapon at the same time.
+Encapsulation is the concept of keeping object data and methods together and private or seperate from 
+the rest of the code. I.E. the idea of private variables and methods versus public.
+
+E.i. Integration-Manager workflow works by having one manager who lets users freely pull from and edit their
+own version of the one canonical repository. Code can then be pushed to the canonical version of the repository
+once the integration-manager tests the code and is satisfied that it works correctly.
+
+Dictator Lieutenants workflow is similar to the integration-manager workflow, however the lieutenants oversee some
+portion or feature of the project, and do the work of the integration-manager in making sure that each push from
+developers works correctly. The dictator then takes pushes from the lieutenants and makes sure they work correctly,
+and pushes to the canonical repository.
+
+E.j. because 1 manager integrating changes from 100 devs couldnt possible test and maintain the number of pushes
+necessary to keep things moving.
+
+4.
+ 
+
+
+
